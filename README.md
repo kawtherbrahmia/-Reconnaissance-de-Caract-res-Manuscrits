@@ -11,6 +11,19 @@ Ce rapport présente les améliorations apportées à un modèle existant de rec
 
 - Lancer `TP.py` pour entraîner le modèle, évaluer ou utiliser la webcam pour la reconnaissance en temps réel.
 
+## Télécharger les datasets Kaggle :
+
+Pour utiliser les datasets provenant de Kaggle, vous devez générer une clé API depuis votre compte Kaggle :
+
+- Connectez-vous à votre compte Kaggle.
+- Allez dans "My Account" > "API" > cliquez sur "Create New API Token".
+- Un fichier `kaggle.json` sera téléchargé.
+- Placez ce fichier dans le dossier `~/.kaggle/` (Linux/Mac) ou `%USERPROFILE%\.kaggle\` (Windows).
+- Assurez-vous que les permissions du fichier sont sécurisées (ex : `chmod 600 ~/.kaggle/kaggle.json` sous Linux).
+
+Ensuite, vous pouvez télécharger les datasets avec la commande :
+kaggle datasets download -d <nom-du-dataset>
+ou en utilisant les scripts fournis.
 ## Améliorations possibles
 
 - Optimiser le prétraitement en temps réel.
